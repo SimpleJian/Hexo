@@ -1,13 +1,12 @@
 title: 最优间隔分类器建模
-date: 2014/07/12
-categories: 
-- 学习笔记
-tags: 
-- SVM
-- classification
-- model
+categories:
+  - 学习笔记
+tags:
+  - SVM
+  - classification
+  - model
+date: 2014-07-12 00:00:00
 ---
-
 
 针对任何分类问题，通过特征提取后，就能得到特征向量及对应的类别标签：
 

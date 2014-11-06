@@ -5,6 +5,7 @@
   "dependencies": {
     "hexo-generator-feed": "^0.2.1",
     "hexo-math": "^1.0.3",
+    "hexo-qiniu": "^0.1.0",
     "hexo-renderer-ejs": "*",
     "hexo-renderer-marked": "*",
     "hexo-renderer-stylus": "*"

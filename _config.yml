@@ -81,6 +81,7 @@ disqus_shortname:
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
 plugins: 
+- hexo-qiniu
 - hexo-generator-feed
 - hexo-math
 theme: pacman
@@ -97,3 +98,8 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
+qiniu:
+  bucket: lingdian618
+  style_seperator: '-' 
+  default_key_prefix: 
+    image: images/ 
