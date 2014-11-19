@@ -85,7 +85,8 @@ plugins:
 - hexo-qiniu
 - hexo-generator-feed
 - hexo-math
-theme: pacman
+# theme: hexo-theme-landscape
+theme: modified-pacman
 exclude_generator:
 
 # Deployment

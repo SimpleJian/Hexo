@@ -1,4 +1,3 @@
-layout: photo
 title: CSU随拍
 date: 2013-06-22
 categories: 
