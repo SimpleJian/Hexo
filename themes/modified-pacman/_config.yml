@@ -3,6 +3,7 @@ menu:
   Home: /
   Archives: /archives
   Gallery: /categories/相册
+  About: /About
 #  Tags: /tags
 #  Categories: /categories
 ## you can create `tags` and `categories` folders in `../source`.
