@@ -1,0 +1,71 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <!-- 文章日期 -->
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    <!-- 文章类别 -->
+    <%- partial('post/category') %>
+  </div>
+  <div class="article-inner">
+    <!-- 文章开头的fancybox照片 -->
+    <%- partial('post/gallery') %>
+    <% if (post.link || post.title){ %>
+      <header class="article-header">
+        <!-- 文章标题 -->
+        <%- partial('post/title', {class_name: 'article-title'}) %>
+      </header>
+    <% } %>
+    <div class="article-entry" itemprop="articleBody">
+      <!-- 有摘要并且是索引页面（首页，归档页面，分类页面，标签页面）就显示摘要 -->
+      <% if (index){ %>
+        <% if (post.excerpt){ %>
+          <%- post.excerpt %>
+        <% } else { %>
+          <p itemprop="description" ><%= strip_html(post.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 200) %></p>
+        <% } %>
+        <!-- 主题配置中的excerpt_link为 Read More -->
+        <% if (theme.excerpt_link){ %>
+          <p class="article-more-link">
+            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+          </p>
+        <% } %>
+      <!-- 没有摘要或者不是索引页面时就显示全文 -->
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    </div>
+    <footer class="article-footer">
+    <!--  <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>  -->
+      <!-- 文章的评论功能打开并且配置了disqus-->
+      <% if (post.comments && config.disqus_shortname){ %>
+        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+      <% } %>
+      <!-- 显示文章标签 -->
+      <%- partial('post/tag') %>
+    </footer>
+  </div>
+  <!-- 如果不是索引页就显示导航：上一页，下一页 -->
+  <% if (!index){ %>
+    <%- partial('post/nav') %>
+  <% } %>
+</article>
+
+<% if (!index && post.comments && config.duoshuo_shortname){ %>
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'<%= config.duoshuo_shortname %>'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
+  <% } %>

@@ -3,8 +3,8 @@ date: 2014/07/05
 categories:
 - 学习笔记
 tags: 
-- Numerical Optimization
-- Nonlinear Optimization
+- math
+- optimization
 - KKT
 ---
 

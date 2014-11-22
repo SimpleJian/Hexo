@@ -3,9 +3,8 @@ date: 2013/10/21
 categories:
 - 学习笔记
 tags: 
-- Digit image process
+- DIP
 - DFT
-- Introduction to algorithm
 ---
 
 

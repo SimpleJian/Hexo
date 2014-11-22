@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Just follow your heart
+title: Lijian's Site
 subtitle: Everything is possible if you have the real passion to what you do
-description: Just another blog
+description: My Blog for share and record some interesting things. 
 author: Lijian
 email: jian.li@nlpr.ia.ac.cn
 language: zh-Hans
@@ -75,8 +75,8 @@ time_format: H:mm:ss
 per_page: 10
 pagination_dir: page
 
-# Disqus
-disqus_shortname:
+# Duoshuo
+duoshuo_shortname: lingdian618
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
@@ -85,8 +85,7 @@ plugins:
 - hexo-qiniu
 - hexo-generator-feed
 - hexo-math
-# theme: hexo-theme-landscape
-theme: modified-pacman
+theme: landscape
 exclude_generator:
 
 # Deployment
