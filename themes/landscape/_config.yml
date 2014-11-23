@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  Gallery: /gallery
   About: /about
 rss: /atom.xml
 
@@ -20,7 +21,7 @@ widgets:
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
+favicon: /css/images/little.ico
 twitter:
 google_plus:
 fb_admins:

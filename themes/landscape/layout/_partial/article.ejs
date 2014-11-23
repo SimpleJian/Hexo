@@ -20,7 +20,7 @@
         <% if (post.excerpt){ %>
           <%- post.excerpt %>
         <% } else { %>
-          <p itemprop="description" ><%= strip_html(post.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 200) %></p>
+          <p itemprop="description" ><%= strip_html(post.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 180) %></p>
         <% } %>
         <!-- 主题配置中的excerpt_link为 Read More -->
         <% if (theme.excerpt_link){ %>

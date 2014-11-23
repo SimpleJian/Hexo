@@ -3,12 +3,18 @@
   <div id="container">
     <div id="wrap">
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <%if(page.layout == 'about' || page.layout == 'gallery'){%>
+        <div class="outer"><section>
+          <%- body%>
+        </section></div>
+      <%}else{%>
       <div class="outer">
         <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+        <% if (theme.sidebar && theme.sidebar !== 'bottom' ){ %>
           <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
         <% } %>
       </div>
+      <%}%>
       <!-- 页脚，powered by …… -->
       <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     </div>
