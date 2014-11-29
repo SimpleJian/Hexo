@@ -46,6 +46,7 @@ date: 2014-07-12 00:00:00
 & \mathop{min}_{\vec w, b}  \frac{1}{2}{\Vert \vec w \Vert}^2  , & s.t. \quad  (\vec w \cdot {\vec x}_i + b)\cdot y_i \geq 1 
 \end{eqnarray}
 {% endmath-block %}
+
 最终，我们将上一节复杂的优化问题转化成了一个带约束的凸优化问题，但仍然不好求解，所以还得转化。
 
 ## 转化为对偶问题
@@ -70,6 +71,7 @@ date: 2014-07-12 00:00:00
 &=& \mathop{min}_{\vec w, b}_{ (\vec w, b)\in A }  \frac{1}{2}{\Vert \vec w \Vert}^2  
 \end{eqnarray}
 {% endmath-block %}
+
 推导结果表面min max函数与上一节中带约束的凸优化问题是等价的。
 
 ### 将min max函数转为max min函数
