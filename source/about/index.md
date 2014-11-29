@@ -4,7 +4,7 @@ date: 2014-11-22 20:50:07
 ---
 
 ## 简介
-李健，非歌手，学生一枚。各种ID：lijian430421，lingdian618，bystander，beatlj，水手1。
+李健，非歌手，曾在ACM赛场打过酱油，阿里大数据竞赛中当过炮灰，现为研究僧一枚。本人各种ID：lijian430421，lingdian618，bystander，beatlj，水手1。
 
 
 ## 经历

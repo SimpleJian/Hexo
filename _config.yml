@@ -7,12 +7,12 @@ title: Lijian's Site
 subtitle: Everything is possible if you have the real passion to what you do
 description: My Blog for share and record some interesting things. 
 author: Lijian
-email: jian.li@nlpr.ia.ac.cn
+email: lijian430421@gmail.com
 language: zh-Hans
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://lingdian618.github.io/
+url: http://lijian.ml
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
@@ -94,7 +94,7 @@ deploy:
 - type: git
   repo: 
     gitcafe: git@gitcafe.com:lingdian618/lingdian618.git,gitcafe-pages
-    github: git@github.com:lingdian618/lingdian618.github.io.git
+#    github: git@github.com:lingdian618/lingdian618.github.io.git
 feed: 
   type: atom
   path: atom.xml

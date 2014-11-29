@@ -15,12 +15,9 @@
         <% } %>
       </div>
       <%}%>
-      <!-- 页脚，powered by …… -->
       <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     </div>
-    <!-- 移动端？ -->
     <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <!-- 评论框，js包含 -->
     <%- partial('_partial/after-footer') %>
   </div>
 </body>
