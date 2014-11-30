@@ -94,7 +94,7 @@ deploy:
 - type: git
   repo: 
     gitcafe: git@gitcafe.com:lingdian618/lingdian618.git,gitcafe-pages
-#    github: git@github.com:lingdian618/lingdian618.github.io.git
+    github: git@github.com:lingdian618/lingdian618.github.io.git
 feed: 
   type: atom
   path: atom.xml
